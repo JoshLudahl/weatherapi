@@ -3,7 +3,6 @@ package com.softklass.weatherapi;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,7 +11,6 @@ public class CitySuggestion {
 
     /**
      * First we'll support America by searching for city or zip code, then expand to other locations
-     * @param keyword
      * @return ArrayList of locations that match the city or zip code
      */
     @GetMapping("/cities")
