@@ -1,4 +1,4 @@
-package com.softklass.weatherapi;
+package com.softklass.weatherapi.controllers;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
