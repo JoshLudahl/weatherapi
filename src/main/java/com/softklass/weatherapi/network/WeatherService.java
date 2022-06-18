@@ -15,7 +15,7 @@ import java.util.logging.Logger;
 @Component
 public class WeatherService {
 
-    private static final Logger LOGGER = Logger.getLogger( WeatherService.class.getName() );
+    private static final Logger LOGGER = Logger.getLogger(WeatherService.class.getName());
     private static final String WEATHER_BASE_URL = "https://api.openweathermap.org/data/2.5/weather?";
 
     private String API_KEY;
@@ -23,7 +23,8 @@ public class WeatherService {
     WebClient webClient = WebClient.create();
 
     @Autowired
-    public WeatherService() { }
+    public WeatherService() {
+    }
 
     public Mono<WeatherResponse> getWeatherOneCall(WeatherRequest request) throws URISyntaxException {
         LOGGER.log(Level.INFO, API_KEY);
